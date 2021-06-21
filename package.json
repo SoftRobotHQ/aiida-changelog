@@ -1,0 +1,13 @@
+{
+  "name": "aiida-changelog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SoftRobotHQ/aiida-changelog.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "github-release-from-changelog --filename CHANGELOG.md"
+  },
+  "dependencies": {
+    "github-release-from-changelog": "^2.1.1"
+  }
+}
