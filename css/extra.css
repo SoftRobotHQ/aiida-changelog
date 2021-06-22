@@ -16,6 +16,10 @@ img {
     margin-left: 0;
 }
 
+.md-nav__title {
+    visibility: hidden;
+}
+
 footer {
     visibility: hidden;
 }
