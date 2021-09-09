@@ -20,7 +20,8 @@
 
 * Improve robustness of OCR service
 * Better logging for document with bad text layer
-* New interpretation algorithm specialized for scanned documents (receipts etc)* More robust interpretation
+* New interpretation algorithm specialized for scanned documents (receipts etc)
+* More robust interpretation
 * Improved online trained interpretation algorithm
 * New collection template* Updated API documenation
 * Minor bug fixes
