@@ -1,3 +1,31 @@
+# 2.0.4
+
+2021-09-08
+
+* Finalize improvements
+* Minor bug fixes
+
+# 2.0.3
+
+2021-09-06
+
+* Added new field type BIC
+* Updated formatting and validation on IBAN and monetary fields
+* Updated collection templates
+* Minor bug fixes
+
+# 2.0.2
+
+2021-08-26
+
+* Improve robustness of OCR service
+* Better logging for document with bad text layer
+* New interpretation algorithm specialized for scanned documents (receipts etc)* More robust interpretation
+* Improved online trained interpretation algorithm
+* New collection template* Updated API documenation
+* Minor bug fixes
+
+
 # 2.0.1
 
 2021-06-30
