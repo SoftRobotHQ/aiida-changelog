@@ -23,7 +23,8 @@
 * New interpretation algorithm specialized for scanned documents (receipts etc)
 * More robust interpretation
 * Improved online trained interpretation algorithm
-* New collection template* Updated API documenation
+* New collection template
+* Updated API documenation
 * Minor bug fixes
 
 
