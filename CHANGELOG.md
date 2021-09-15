@@ -1,3 +1,12 @@
+# 2.0.3
+
+2021-09-15
+
+* Improved offline trained interpretation algorithm
+* New feature: Workspace classifier
+* New and improved OCR service
+
+
 # 2.0.2
 
 2021-09-06
