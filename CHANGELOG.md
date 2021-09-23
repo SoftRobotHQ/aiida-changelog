@@ -1,3 +1,14 @@
+# 2.0.4
+
+2021-09-23
+
+* Accept null setting when creating a collection</li>
+* Apply templates will now merge with current collection and workflow</li>
+* Workspace classification: Mail import for workspaces</li>
+* BIC field part of reminder workflow</li>
+* Skip duplicate status messages</li>
+* Offline training improvements for classification, interpretation and accounting</li>
+
 # 2.0.3
 
 2021-09-15
