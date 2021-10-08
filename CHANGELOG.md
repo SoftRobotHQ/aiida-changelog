@@ -1,3 +1,13 @@
+# 2.0.5
+
+2021-10-08
+
+* Template type-a now uses "Credit invoice" workflow
+* Online/Offline interpretation improvements (better accuracy)
+* Field types improvements for Invoice number and IBAN
+* Minor bug fixes
+
+
 # 2.0.4
 
 2021-09-23

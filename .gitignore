@@ -131,3 +131,14 @@ dmypy.json
 .DS_Store
 
 /node_modules
+.idea/aiida-changelog.iml
+
+.idea/inspectionProfiles/profiles_settings.xml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
