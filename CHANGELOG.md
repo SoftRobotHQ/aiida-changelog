@@ -1,3 +1,14 @@
+# 2.0.6
+
+2021-10-15
+* Items in process state will timeout after 30 minutes and set to error state 
+* Upload items stabilization: Automatic retry of stuck and error items older than 10 mins and younger than 30 mins
+* New feature: Get collection endpoint
+* Negative monetary values are transformed to positive monetary values (absolute value)
+* Date and BIC field type improvements
+* Offline interpretation algorithm improvements
+* Minor bug fixes
+
 # 2.0.5
 
 2021-10-08
