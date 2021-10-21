@@ -1,3 +1,13 @@
+# 2.0.7
+2021-10-21
+* Better management of large documents
+* api-standard collection template now contain other workflow
+* Offline trained interpretation algorithms improvements
+* Improved monetary field formatting
+* Improved extraction of texts in documents
+* Minor bug fixes
+
+
 # 2.0.6
 
 2021-10-15
