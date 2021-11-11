@@ -1,3 +1,15 @@
+# 2.0.9
+
+2021-11-11
+* New offline trained interpretation algorithm (focus on VAT)
+* UX updates regarding status messages and accounting
+* Account prediction improvements
+* Zero VAT is not set on invoices with missing VAT
+* Overall responsiveness and speed improvements 
+* Critical bug fixes regarding unsigned monetary field and account prediction
+* Minor bug fixes
+
+
 # 2.0.8
 
 2021-10-29

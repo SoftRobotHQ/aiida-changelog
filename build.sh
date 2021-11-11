@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -TRv ../site/ ./
+mv ../site/* ./
