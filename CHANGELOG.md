@@ -1,3 +1,11 @@
+# 2.0.10
+
+2021-11-24
+* Improved account prediction
+* Interpreter algorithm improvements
+* Document classification improvements
+* Minor bug fixes
+
 # 2.0.9
 
 2021-11-11

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mv ../site/* ./
+rsync --update -raz --progress ../site ./
