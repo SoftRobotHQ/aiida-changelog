@@ -1,3 +1,12 @@
+# 2.0.11
+
+2021-12-07
+* Account prediction improvements
+* New online trained accounting prediction 
+* Offline interpretation algorithms improvements
+* New feature: Supplier id
+* Minor bug fixes
+
 # 2.0.10
 
 2021-11-24
