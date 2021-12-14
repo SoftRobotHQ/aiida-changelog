@@ -1,3 +1,9 @@
+# 2.0.12
+
+2021-12-14
+* General speed improvements
+* Minor bug fixes
+
 # 2.0.11
 
 2021-12-07
