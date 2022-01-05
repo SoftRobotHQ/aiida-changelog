@@ -1,0 +1,1056 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://versions.aiida.io/">
+      
+      <link rel="icon" href="assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+    
+    
+      
+        <title>Release Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.bb3983ee.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aiida-release-notes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Release Notes" class="md-header__button md-logo" aria-label="Release Notes" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Release Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Release Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Release Notes" class="md-nav__button md-logo" aria-label="Release Notes" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    Release Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Release Notes
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2022-01-05" class="md-nav__link">
+    2022-01-05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-20" class="md-nav__link">
+    2021-12-20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-14" class="md-nav__link">
+    2021-12-14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-07" class="md-nav__link">
+    2021-12-07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-11-24" class="md-nav__link">
+    2021-11-24
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-11-11" class="md-nav__link">
+    2021-11-11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-29" class="md-nav__link">
+    2021-10-29
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-21" class="md-nav__link">
+    2021-10-21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-15" class="md-nav__link">
+    2021-10-15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-08" class="md-nav__link">
+    2021-10-08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-23" class="md-nav__link">
+    2021-09-23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-15" class="md-nav__link">
+    2021-09-15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-06" class="md-nav__link">
+    2021-09-06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-30" class="md-nav__link">
+    2021-06-30
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-17" class="md-nav__link">
+    2021-06-17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-09" class="md-nav__link">
+    2021-06-09
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-07" class="md-nav__link">
+    2021-06-07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-26" class="md-nav__link">
+    2021-05-26
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-12" class="md-nav__link">
+    2021-05-12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-05" class="md-nav__link">
+    2021-05-05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-29" class="md-nav__link">
+    2021-04-29
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-21" class="md-nav__link">
+    2021-04-21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-14" class="md-nav__link">
+    2021-04-14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-03-16" class="md-nav__link">
+    2021-03-16
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020-03-10" class="md-nav__link">
+    2020-03-10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-03-03" class="md-nav__link">
+    2021-03-03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-02-09" class="md-nav__link">
+    2021-02-09
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-02-02" class="md-nav__link">
+    2021-02-02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-01-27" class="md-nav__link">
+    2021-01-27
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2022-01-05" class="md-nav__link">
+    2022-01-05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-20" class="md-nav__link">
+    2021-12-20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-14" class="md-nav__link">
+    2021-12-14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-12-07" class="md-nav__link">
+    2021-12-07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-11-24" class="md-nav__link">
+    2021-11-24
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-11-11" class="md-nav__link">
+    2021-11-11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-29" class="md-nav__link">
+    2021-10-29
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-21" class="md-nav__link">
+    2021-10-21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-15" class="md-nav__link">
+    2021-10-15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-10-08" class="md-nav__link">
+    2021-10-08
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-23" class="md-nav__link">
+    2021-09-23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-15" class="md-nav__link">
+    2021-09-15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-09-06" class="md-nav__link">
+    2021-09-06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-30" class="md-nav__link">
+    2021-06-30
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-17" class="md-nav__link">
+    2021-06-17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-09" class="md-nav__link">
+    2021-06-09
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-06-07" class="md-nav__link">
+    2021-06-07
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-26" class="md-nav__link">
+    2021-05-26
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-12" class="md-nav__link">
+    2021-05-12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-05-05" class="md-nav__link">
+    2021-05-05
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-29" class="md-nav__link">
+    2021-04-29
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-21" class="md-nav__link">
+    2021-04-21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-04-14" class="md-nav__link">
+    2021-04-14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-03-16" class="md-nav__link">
+    2021-03-16
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2020-03-10" class="md-nav__link">
+    2020-03-10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-03-03" class="md-nav__link">
+    2021-03-03
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-02-09" class="md-nav__link">
+    2021-02-09
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-02-02" class="md-nav__link">
+    2021-02-02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-01-27" class="md-nav__link">
+    2021-01-27
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="aiida-release-notes">AIIDA Release notes</h1>
+<h4 id="2022-01-05">2022-01-05</h4>
+<ul>
+<li>Fortnox OAuth2 Integration</li>
+<li>UX updates regarding interpretation and accounting fields</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-12-20">2021-12-20</h4>
+<ul>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-12-14">2021-12-14</h4>
+<ul>
+<li>General speed improvements</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-12-07">2021-12-07</h4>
+<ul>
+<li>Account prediction improvements</li>
+<li>New online trained accounting prediction </li>
+<li>Offline interpretation algorithms improvements</li>
+<li>New feature: Supplier id</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-11-24">2021-11-24</h4>
+<ul>
+<li>Improved account prediction</li>
+<li>Interpreter algorithm improvements</li>
+<li>Document classification improvements</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-11-11">2021-11-11</h4>
+<ul>
+<li>New offline trained interpretation algorithm (focus on VAT)</li>
+<li>UX updates regarding status messages and accounting</li>
+<li>Account prediction improvements</li>
+<li>Zero VAT is not set on invoices with missing VAT</li>
+<li>Overall responsiveness and speed improvements </li>
+<li>Critical bug fixes regarding unsigned monetary field and account prediction</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-10-29">2021-10-29</h4>
+<ul>
+<li>New feature: Get and set predefined accounts on workflow level</li>
+<li>New feature: Status messages for account prediction</li>
+<li>Updated swagger documentation</li>
+<li>Interpretation prediction algorithms improvements</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-10-21">2021-10-21</h4>
+<ul>
+<li>Better management of large documents</li>
+<li>api-standard collection template now contain other</li>
+<li>Offline trained interpretation algorithms improvements</li>
+<li>Improved monetary field formatting</li>
+<li>Improved extraction of texts in documents</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-10-15">2021-10-15</h4>
+<ul>
+<li>Items in process state will timeout after 30 minutes and set to error state </li>
+<li>Upload items stabilization: Automatic retry of stuck and error items older than 10 mins and younger than 30 mins</li>
+<li>New feature: Get collection endpoint</li>
+<li>Negative monetary values are transformed to positive monetary values (absolute value)</li>
+<li>Date and BIC field type improvements</li>
+<li>Offline interpretation algorithm improvements</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-10-08">2021-10-08</h4>
+<ul>
+<li>Template type-a now uses "Credit invoice" workflow</li>
+<li>Online/Offline interpretation improvements (better accuracy)</li>
+<li>Field types improvements for Invoice number and IBAN</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-09-23">2021-09-23</h4>
+<ul>
+<li>Accept null setting when creating a collection</li>
+<li>Apply templates will now merge with current collection and workflow</li>
+<li>Workspace classification: Mail import for workspaces</li>
+<li>BIC field part of reminder workflow</li>
+<li>Skip duplicate status messages</li>
+<li>Offline training improvements for classification, interpretation and accounting</li>
+</ul>
+<h4 id="2021-09-15">2021-09-15</h4>
+<ul>
+<li>Improved offline trained interpretation algorithm</li>
+<li>New feature: Workspace classifier</li>
+<li>New and improved OCR service</li>
+</ul>
+<h4 id="2021-09-06">2021-09-06</h4>
+<ul>
+<li>Finalize improvements</li>
+<li>Added new field type BIC</li>
+<li>Updated formatting and validation on IBAN and monetary fields</li>
+<li>Updated collection templates</li>
+<li>Minor bug fixes</li>
+<li>Improve robustness of OCR service</li>
+<li>Better logging for document with bad text layer</li>
+<li>New interpretation algorithm specialized for scanned documents (receipts etc)</li>
+<li>More robust interpretation</li>
+<li>Improved online trained interpretation algorithm</li>
+<li>New collection template</li>
+<li>Updated API documenation</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-06-30">2021-06-30</h4>
+<ul>
+<li>New and better OCR service for non PDF documents and documents with bad text layer</li>
+<li>Finalize item, easier and better management of training of items</li>
+<li>New collection template ’type-a’</li>
+<li>UX updates for warning messages</li>
+<li>Minor bug fixes</li>
+</ul>
+<h4 id="2021-06-17">2021-06-17</h4>
+<ul>
+<li>Interpreter improvements regarding BG and PG (Less false positives)</li>
+<li>Duplicate item warning. Status message will contain a warning message if invoice number and/or OCR number exist in another document (for same supplier)</li>
+<li>Redo OCR correctly on PDF's with a specific type of bad text layer</li>
+<li>API Documentation updated</li>
+<li>Improved management of large documents</li>
+</ul>
+<h4 id="2021-06-09">2021-06-09</h4>
+<ul>
+<li>
+<p>Offline trained interpretation algorithms improvements (less false positives)</p>
+</li>
+<li>
+<p>Extraction of large documents speed optimization</p>
+</li>
+<li>
+<p>Automatic addition of multiple marked VAT amounts</p>
+</li>
+</ul>
+<h4 id="2021-06-07">2021-06-07</h4>
+<ul>
+<li>
+<p>Minor bug fixes</p>
+</li>
+<li>
+<p>Updated swagger documentation</p>
+</li>
+<li>
+<p>Accounting improvements</p>
+</li>
+</ul>
+<h4 id="2021-05-26">2021-05-26</h4>
+<ul>
+<li>
+<p>New feature: Field status and warning messages</p>
+</li>
+<li>
+<p>New feature: Dynamic document classifications</p>
+</li>
+<li>
+<p>New feature: Finalize endpoint for easier integration</p>
+</li>
+<li>
+<p>New collection template</p>
+</li>
+</ul>
+<h4 id="2021-05-12">2021-05-12</h4>
+<ul>
+<li>
+<p>User activation fix</p>
+</li>
+<li>
+<p>Accounting improvements (improved accuracy)</p>
+</li>
+<li>
+<p>Online trained interpreter improvements (improved accuracy)</p>
+</li>
+<li>
+<p>Standard accounts for receipts</p>
+</li>
+<li>
+<p>General speed optimizations</p>
+</li>
+<li>
+<p>Field matcher improvements</p>
+</li>
+</ul>
+<h4 id="2021-05-05">2021-05-05</h4>
+<ul>
+<li>
+<p>Improved formatting rules for invoice numbers and monetary fields</p>
+</li>
+<li>
+<p>Speed improvements regarding workflows</p>
+</li>
+</ul>
+<h4 id="2021-04-29">2021-04-29</h4>
+<ul>
+<li>
+<p>Improved offline trained interpreter (better accuracy)</p>
+</li>
+<li>
+<p>Currency field improvements (less false positives)</p>
+</li>
+<li>
+<p>General speed improvements</p>
+</li>
+</ul>
+<h4 id="2021-04-21">2021-04-21</h4>
+<ul>
+<li>
+<p>Improved offline interpreter algorithms (better accuracy and less false positives)</p>
+</li>
+<li>
+<p>Improved document classifier</p>
+</li>
+<li>
+<p>Better interpretation of VAT zero and SEK</p>
+</li>
+<li>
+<p>Improved accounting prediction</p>
+</li>
+</ul>
+<h4 id="2021-04-14">2021-04-14</h4>
+<ul>
+<li>
+<p>Fix regarding not writing over interpreted Currency and zero VAT value with previous value</p>
+</li>
+<li>
+<p>Big improvements on predicting/setting debit and credit for accounting</p>
+</li>
+<li>
+<p>Improvements regarding account prediction</p>
+</li>
+<li>
+<p>Extractor speed improvements</p>
+</li>
+<li>
+<p>Online model improvements</p>
+</li>
+<li>
+<p>Speed improvements regarding uploading and interpreting documents</p>
+</li>
+<li>
+<p>General speed improvements</p>
+</li>
+</ul>
+<h4 id="2021-03-16">2021-03-16</h4>
+<ul>
+<li>
+<p>Account prediction: Optimized speed and accuracy</p>
+</li>
+<li>
+<p>Performance improvements: Slight optimization of interpretation time, allround and in particular for OCR</p>
+</li>
+</ul>
+<h4 id="2020-03-10">2020-03-10</h4>
+<ul>
+<li>
+<p>Field formatting improvements (less false positives)</p>
+</li>
+<li>
+<p>Updated offline interpretation classifier improvements (improved accuracy)</p>
+</li>
+<li>
+<p>Faster interpretation</p>
+</li>
+<li>
+<p>Improvements regarding avoiding setting VAT to zero</p>
+</li>
+</ul>
+<h4 id="2021-03-03">2021-03-03</h4>
+<ul>
+<li>
+<p>Increased stability: Internal updates to make sure the service can better handle high loads (no change to the 20-document limit at the moment)</p>
+</li>
+<li>
+<p>Account predictor upgrade: Brand new algorithm put in place which promises higher accuracy on account prediction</p>
+</li>
+<li>
+<p>Opened up api for predefined accounts: GET and PUT for predefined accounts, which are collection-specific standard accounts for total, VAT, and rounding.</p>
+</li>
+</ul>
+<h4 id="2021-02-09">2021-02-09</h4>
+<ul>
+<li>
+<p>New interpreter help algorithm based on statistical methods (more valid documents and higher accuracy)</p>
+</li>
+<li>
+<p>Stability improvements (more robust on managing internal and external services going down or timeout</p>
+</li>
+</ul>
+<h4 id="2021-02-02">2021-02-02</h4>
+<ul>
+<li>
+<p>Stability fixes regarding uploading items (less items that could hang in process state)</p>
+</li>
+<li>
+<p>Retry with longer delays if storage services are not responding (avoid error state for shorter disturbances with external services)</p>
+</li>
+<li>
+<p>Minimizes setting values with just a part of the value (reduces false positives and increased accuracy)</p>
+</li>
+<li>
+<p>Manage more monetary formats (more valid items)</p>
+</li>
+<li>
+<p>Manage more currency formats (more valid items)</p>
+</li>
+<li>
+<p>Manage more date formats (more valid items)</p>
+</li>
+<li>
+<p>Stricter validation of invoice number (less false positives and increased accuracy)</p>
+</li>
+<li>
+<p>Minimizing setting false common values (helps minimizing setting VAT to "0" etc.)</p>
+</li>
+<li>
+<p>Speed up of OCR and mange large documents better</p>
+</li>
+<li>
+<p>Swagger documentation updated</p>
+</li>
+<li>
+<p>Improvements of online trained interpreter (increased accuracy and more valid items)</p>
+</li>
+</ul>
+<h4 id="2021-01-27">2021-01-27</h4>
+<ul>
+<li>
+<p>Stricter rules for monetary fields</p>
+</li>
+<li>
+<p>Accept more monetary formats (more valid documents)</p>
+</li>
+<li>
+<p>Accept more date formats (more valid documents)</p>
+</li>
+<li>
+<p>Interpreter speed improvments on larger documents</p>
+</li>
+<li>
+<p>Accept more currency formats (more valid documents)</p>
+</li>
+<li>
+<p>Improvements on our online and offline trained model (increased accuracy)</p>
+</li>
+<li>
+<p>Improvements on our help algoritms to lower false positives</p>
+</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.361d90f1.min.js"}</script>
+    
+    
+      <script src="assets/javascripts/bundle.289a2a4b.min.js"></script>
+      
+    
+  </body>
+</html>
