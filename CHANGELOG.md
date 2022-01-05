@@ -1,3 +1,10 @@
+# 2.0.14
+
+2022-01-05
+* Fortnox OAuth2 Integration
+* UX updates regarding interpretation and accounting fields
+* Minor bug fixes
+
 # 2.0.13
 
 2021-12-20
