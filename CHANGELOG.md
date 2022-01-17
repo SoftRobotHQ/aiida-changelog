@@ -1,3 +1,13 @@
+# 2.0.15
+
+2022-01-17
+* New custom Sharepoint export
+* Accountings with prefilled amounts, but no account number if no account was predicted
+* UX updates regarding interpretation and accounting fields
+* Fixes regarding item state
+* Possibility to move items between collections in UI (drag and drop) and via API added
+* Minor bug fixes and improvements
+
 # 2.0.14
 
 2022-01-05
