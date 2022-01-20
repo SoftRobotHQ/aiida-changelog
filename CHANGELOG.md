@@ -1,3 +1,15 @@
+# 2.0.16
+
+2022-01-20
+* Adding of more standard accounts
+* UI/UX updates regarding handling/labeling of items
+* Balancing of amounts now considered for an item's status
+* Simplified the creation of new collections with Fortnox
+* UX updates regarding interpretation and accounting fields
+* Updates to discrepancy calculations
+* Updates to the newly added collection classifier
+* Minor bug fixes and improvements
+
 # 2.0.15
 
 2022-01-17
