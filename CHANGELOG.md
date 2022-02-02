@@ -1,3 +1,10 @@
+# 2.0.17
+
+2022-02-02
+* New status page: [status.aiida.io](https://status.aiida.io/)
+* Updates on Aiida website
+* Minor bug fixes and improvements
+
 # 2.0.16
 
 2022-01-20
