@@ -1,0 +1,23 @@
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    width: 100px;
+    height: 70px;
+}
+
+img {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(200%)
+      contrast(100%);
+  }
+
+.md-header__title {
+    margin-left: 0;
+}
+
+@media only screen and (min-width: 1220px) {
+    .md-nav__title {
+        visibility: hidden;
+    }
+  }
+
+footer {
+    visibility: hidden;
+}

@@ -1,0 +1,14 @@
+site_name: Release Notes
+site_url: https://versions.aiida.io/
+nav:
+  - Release Notes: index.md
+extra_css:
+    - css/extra.css
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.ico
+  language: en
+  palette:
+    primary: cyan
+    accent: cyan
