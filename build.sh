@@ -21,10 +21,9 @@ echo 'DONE'
 
 ## Move new site docs
 echo 'Moving new site docs...'
-mv ../site/assets/* ./assets
-mv ../site/css/* ./css
-mv ../site/search/* ./search
+mv ../site/assets/ ./assets
+mv ../site/css/ ./css
+mv ../site/search/ ./search
 mv ../site/404.html .
 mv ../site/index.html .
-
 echo 'DONE'
