@@ -8,11 +8,7 @@ cp -R ./site ../site
 echo 'DONE'
 
 echo 'Removing old site docs...'
-rm -rfv ./assets/*
-rm -rfv ./css/*
-rm -rfv ./search/*
-rm 404.html
-rm index.html
+rm -rfv ./assets/* ./cass/* ./search/* 404.html index.html
 echo 'DONE'
 
 echo 'Moving new site docs...'
