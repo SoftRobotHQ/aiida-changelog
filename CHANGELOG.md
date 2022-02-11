@@ -1,3 +1,9 @@
+# 2.0.18
+
+2022-02-11
+* More accepted monetary values in interpretation and accounting fields
+* Minor bug fixes and improvements
+
 # 2.0.17
 
 2022-02-02

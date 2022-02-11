@@ -1,5 +1,9 @@
 # AIIDA Release notes
 
+#### 2022-02-11
+* More accepted monetary values in interpretation and accounting fields
+* Minor bug fixes and improvements
+
 #### 2022-02-02
 * New status page: [status.aiida.io](https://status.aiida.io/)
 * Dynamic status health on Aiida website
