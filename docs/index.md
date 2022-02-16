@@ -1,5 +1,12 @@
 # AIIDA Release notes
 
+### 2022-02-16
+* Improvements to extraction of total and vat
+* Interpretation speed improvements
+* UI updates regarding warnings on collapsable fields
+* Possibility to move items from workspace list (drag and drop) to collections and workflows
+* Improvements to debit/credit setting for accountings
+
 #### 2022-02-11
 * More accepted monetary values in interpretation and accounting fields
 * Minor bug fixes and improvements
