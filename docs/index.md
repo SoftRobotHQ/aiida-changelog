@@ -1,6 +1,6 @@
 # AIIDA Release notes
 
-### 2022-02-16
+#### 2022-02-16
 * Improvements to extraction of total and vat
 * Interpretation speed improvements
 * UI updates regarding warnings on collapsable fields
