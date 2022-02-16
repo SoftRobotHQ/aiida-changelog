@@ -4,7 +4,7 @@
 * Improvements to extraction of total and vat
 * Interpretation speed improvements
 * UI updates regarding warnings on collapsable fields
-* Possibility to move items from workspace list (drag and drop) to collections and workflows
+* Possibility to move items from UI (drag and drop) to collections and workflows via workspace list
 * Improvements to debit/credit setting for accountings
 
 #### 2022-02-11
