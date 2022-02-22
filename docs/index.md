@@ -1,5 +1,9 @@
 # AIIDA Release notes
 
+#### 2022-02-22
+* Improved extraction time
+* Improvements to online training
+
 #### 2022-02-16
 * Improvements to extraction of total and vat
 * Interpretation speed improvements

@@ -1,3 +1,9 @@
+# 2.0.20
+
+2022-02-22
+* Improved extraction time
+* Improvements to online training
+
 # 2.0.19
 
 2022-02-16
