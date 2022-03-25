@@ -1,3 +1,10 @@
+# 2.0.21
+
+2022-03-25
+* Autosync with Fortnox
+* Added warning for blacklisted suppliers via "[Svensk Handel Varningslistan](https://www.svenskhandel.se/sakerhetscenter/varningslistan)"
+* Minor bug fixes and improvements
+
 # 2.0.20
 
 2022-02-22
