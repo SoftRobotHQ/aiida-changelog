@@ -1,3 +1,9 @@
+# 2.0.22
+
+2022-05-18
+* Improvements for Total extraction
+* Improved support for highlighting extracted text in document
+
 # 2.0.21
 
 2022-03-25

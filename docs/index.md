@@ -1,5 +1,9 @@
 # AIIDA Release notes
 
+#### 2022-05-18
+* Improvements for Total extraction
+* Improved support for highlighting extracted text in document
+
 #### 2022-03-25
 * Autosync with Fortnox
 * Added warning for blacklisted suppliers via "[Svensk Handel Varningslistan](https://www.svenskhandel.se/sakerhetscenter/varningslistan)"
