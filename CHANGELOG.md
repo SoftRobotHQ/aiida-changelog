@@ -1,3 +1,9 @@
+# 2.0.23
+
+2022-06-07
+* Improved extraction on scanned receipts
+* Improved learning on supplier level
+
 # 2.0.22
 
 2022-05-18

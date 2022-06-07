@@ -1,5 +1,9 @@
 # AIIDA Release notes
 
+#### 2022-06-07
+* Improved extraction on scanned receipts
+* Improved learning on supplier level
+
 #### 2022-05-18
 * Improvements for Total extraction
 * Improved support for highlighting extracted text in document
