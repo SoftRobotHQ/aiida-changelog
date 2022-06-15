@@ -1,3 +1,11 @@
+# 2.0.24
+
+2022-06-15
+* Handling .heif/.heic/.avif file types in API and UI
+* Optimised image compression
+* New feature: Autobook toggle with Fortnox collections
+* Minor bugs and fixes
+
 # 2.0.23
 
 2022-06-07

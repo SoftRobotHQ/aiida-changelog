@@ -1,4 +1,10 @@
-# AIIDA Release notes
+# AIIDA Release Notes
+
+#### 2022-06-15
+* Handling .heif/.heic/.avif file types in API and UI
+* Optimised image compression
+* New feature: Autobook toggle with Fortnox collections
+* Minor bugs and fixes
 
 #### 2022-06-07
 * Improved extraction on scanned receipts
