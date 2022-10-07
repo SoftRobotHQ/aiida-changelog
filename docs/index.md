@@ -1,5 +1,10 @@
 # AIIDA Release Notes
 
+#### 2022-10-07
+* Updated color theme
+* UI fixes
+* Various other fixes
+
 #### 2022-06-15
 * Handling .heif/.heic/.avif file types in API and UI
 * Optimised image compression

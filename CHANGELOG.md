@@ -1,3 +1,10 @@
+# 2.0.25
+
+2022-10-07
+* Updated color theme
+* UI fixes
+* Various other fixes
+
 # 2.0.24
 
 2022-06-15
