@@ -1,3 +1,9 @@
+# 2.0.26
+
+2022-11-30
+* Merge and split feature in API and UI
+* Bug fixes and improvements
+
 # 2.0.25
 
 2022-10-07

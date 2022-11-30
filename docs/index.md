@@ -1,5 +1,9 @@
 # AIIDA Release Notes
 
+#### 2022-11-30
+* Merge and split feature in API and UI
+* Bug fixes and improvements
+
 #### 2022-10-07
 * Updated color theme
 * UI fixes
