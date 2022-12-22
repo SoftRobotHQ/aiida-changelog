@@ -1,3 +1,11 @@
+# 2.0.27
+
+2022-12-22
+* Fix for issue with splitting items with many splitpoints
+* Splitpoints can now be saved/cleared
+* Warnings on collection level for non-classified items
+* Accountings are now presented sorted by account number
+
 # 2.0.26
 
 2022-11-30
