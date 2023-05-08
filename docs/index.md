@@ -1,5 +1,10 @@
 # AIIDA Release Notes
 
+#### 2022-05-08
+* Improved validation for some fields
+* Heuristic reclassification based on quality of interpretation
+* Minor bug fixes
+
 #### 2022-12-22
 * Fix for issue with splitting items with many splitpoints
 * Splitpoints can now be saved/cleared
