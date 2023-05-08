@@ -10,9 +10,11 @@
 6) Change the version number in the package.json to the corresponding tag number, example("version": "2.0.1")
 7) Stage & commit & push
 
-## Running Locally 
+## Running Locally
 
 Run the command 
+* `poetry install` - Install the dependencies
+* `poetry shell` - Run the virtual environment
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
